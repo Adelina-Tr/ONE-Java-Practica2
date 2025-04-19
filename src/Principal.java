@@ -2,29 +2,35 @@ public class Principal {
 
     public static void main(String[] args) {
 
-        //Instancia de una Pelicula
+        //Instancia de la clase Pelicula
         Pelicula miPelicua = new Pelicula();
 
         //Asignacion de valores a los atributos del objeto
         miPelicua.nombre = "Encanto";
         miPelicua.fechaDeLanzamiento = 2021;
         miPelicua.duracionEnMinutos = 120;
+        miPelicua.muestraFichaTecnica();
 
-        //Imprimir valores de los atributos del objeto 'miPelicula'
-        System.out.println("Mi pelicula es: "+miPelicua.nombre);
-        System.out.println("Su fecha de lanzamiento es: "+miPelicua.fechaDeLanzamiento);
-        System.out.println("Su duracion en minnutos es "+miPelicua.duracionEnMinutos);
+        //Aniadir notas de evaluacion
+        miPelicua.evalua(9.75);
+        miPelicua.evalua(9.25);
+        System.out.println(miPelicua.sumaDeEvaluaciones);
+        System.out.println(miPelicua.calculaMedia());
 
         //Otra instancia del tipo Pelicula
         Pelicula otraPelicula = new Pelicula();
+
+        //Asignacion de valores a los atributos del objeto
         otraPelicula.nombre = "Matrix";
         otraPelicula.fechaDeLanzamiento = 1998;
         otraPelicula.duracionEnMinutos = 180;
+        otraPelicula.muestraFichaTecnica();
 
-        //Imprimir valores de los atributos del objeto 'otraPelicula'
-        System.out.println("Mi pelicula es: "+otraPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es: "+otraPelicula.fechaDeLanzamiento);
-        System.out.println("Su duracion en minnutos es "+otraPelicula.duracionEnMinutos);
+        //Aniadir notas de evaluacion
+        otraPelicula.evalua(8.5);
+        otraPelicula.evalua(9.5);
+        System.out.println(otraPelicula.sumaDeEvaluaciones);
+        System.out.println(otraPelicula.calculaMedia());
 
     }
 }
