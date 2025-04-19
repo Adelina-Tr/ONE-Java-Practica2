@@ -11,26 +11,29 @@ public class Principal {
         miPelicua.duracionEnMinutos = 120;
         miPelicua.muestraFichaTecnica();
 
-        //Aniadir notas de evaluacion
+        //Uso de funciones de la Clase
         miPelicua.evalua(9.75);
         miPelicua.evalua(9.25);
-        System.out.println(miPelicua.sumaDeEvaluaciones);
+        System.out.println(miPelicua.getTotalDeEvaluaciones());//getter
         System.out.println(miPelicua.calculaMedia());
 
-        //Otra instancia del tipo Pelicula
-        Pelicula otraPelicula = new Pelicula();
 
-        //Asignacion de valores a los atributos del objeto
-        otraPelicula.nombre = "Matrix";
-        otraPelicula.fechaDeLanzamiento = 1998;
-        otraPelicula.duracionEnMinutos = 180;
-        otraPelicula.muestraFichaTecnica();
 
-        //Aniadir notas de evaluacion
-        otraPelicula.evalua(8.5);
-        otraPelicula.evalua(9.5);
-        System.out.println(otraPelicula.sumaDeEvaluaciones);
-        System.out.println(otraPelicula.calculaMedia());
+
+//        //Otra instancia del tipo Pelicula
+//        Pelicula otraPelicula = new Pelicula();
+//
+//        //Asignacion de valores a los atributos del objeto
+//        otraPelicula.nombre = "Matrix";
+//        otraPelicula.fechaDeLanzamiento = 1998;
+//        otraPelicula.duracionEnMinutos = 180;
+//        otraPelicula.muestraFichaTecnica();
+//
+//        //Uso de funciones de la Clase
+//        otraPelicula.evalua(8.5);
+//        otraPelicula.evalua(9.5);
+//        System.out.println(otraPelicula.getTotalDeEvaluaciones());//getter
+//        System.out.println(otraPelicula.calculaMedia());
 
     }
 }

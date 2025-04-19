@@ -5,8 +5,12 @@ public class Pelicula {
     int fechaDeLanzamiento;
     int duracionEnMinutos;
     boolean inclidoEnElPlan;
-    double sumaDeEvaluaciones;
-    int totalDeEvaluaciones;
+    private double sumaDeEvaluaciones;
+    private int totalDeEvaluaciones;
+
+    int getTotalDeEvaluaciones(){
+        return totalDeEvaluaciones;
+    }
 
     //Metodo que imprime los valores de cada atributo de la clase
     void muestraFichaTecnica(){
