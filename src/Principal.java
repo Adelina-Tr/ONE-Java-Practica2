@@ -26,9 +26,5 @@ public class Principal {
         System.out.println("Su fecha de lanzamiento es: "+otraPelicula.fechaDeLanzamiento);
         System.out.println("Su duracion en minnutos es "+otraPelicula.duracionEnMinutos);
 
-
-
-
-
     }
 }
