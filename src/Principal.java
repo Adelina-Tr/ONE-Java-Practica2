@@ -1,14 +1,17 @@
+//Importacion de Clase Pelicula desde un paquete especifico
+import com.aluracursos.screenmatch.modelos.Pelicula;
+
 public class Principal {
 
     public static void main(String[] args) {
 
-        //Instancia de la clase Pelicula
+        //Instancia de la clase com.aluracursos.screenmatch.modelos.Pelicula
         Pelicula miPelicua = new Pelicula();
 
         //Asignacion de valores a los atributos del objeto
-        miPelicua.nombre = "Encanto";
-        miPelicua.fechaDeLanzamiento = 2021;
-        miPelicua.duracionEnMinutos = 120;
+        miPelicua.setNombre("Encanto");
+        miPelicua.setFechaDeLanzamiento(2021);
+        miPelicua.setDuracionEnMinutos(120);
         miPelicua.muestraFichaTecnica();
 
         //Uso de funciones de la Clase
@@ -17,11 +20,8 @@ public class Principal {
         System.out.println(miPelicua.getTotalDeEvaluaciones());//getter
         System.out.println(miPelicua.calculaMedia());
 
-
-
-
-//        //Otra instancia del tipo Pelicula
-//        Pelicula otraPelicula = new Pelicula();
+//        //Otra instancia del tipo com.aluracursos.screenmatch.modelos.Pelicula
+//        com.aluracursos.screenmatch.modelos.Pelicula otraPelicula = new com.aluracursos.screenmatch.modelos.Pelicula();
 //
 //        //Asignacion de valores a los atributos del objeto
 //        otraPelicula.nombre = "Matrix";
