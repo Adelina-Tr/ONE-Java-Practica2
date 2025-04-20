@@ -1,5 +1,6 @@
 //Importacion de Clase Pelicula desde un paquete especifico
 import com.aluracursos.screenmatch.modelos.Pelicula;
+import com.aluracursos.screenmatch.modelos.Serie;
 
 public class Principal {
 
@@ -19,6 +20,24 @@ public class Principal {
         miPelicua.evalua(9.25);
         System.out.println(miPelicua.getTotalDeEvaluaciones());//getter
         System.out.println(miPelicua.calculaMedia());
+
+        //Instancia de serie Casa Dragon y modificacion de sus atributos
+        Serie casaDragon = new Serie();
+        casaDragon.setNombre("La casa del Dragon");
+        casaDragon.setFechaDeLanzamiento(2022);
+        casaDragon.setTemporadas(1);
+        casaDragon.setMinutosPorEpisodio(50);
+        casaDragon.setEpisodiosPorTemporadas(10);
+
+        //Se imprime ficha tecnica
+        casaDragon.muestraFichaTecnica();
+
+        //Quiero saber cual es la duracion total en minutos de la serie
+        System.out.println(casaDragon.getDuracionEnMinutos());
+
+
+
+
 
 //        //Otra instancia del tipo com.aluracursos.screenmatch.modelos.Pelicula
 //        com.aluracursos.screenmatch.modelos.Pelicula otraPelicula = new com.aluracursos.screenmatch.modelos.Pelicula();
