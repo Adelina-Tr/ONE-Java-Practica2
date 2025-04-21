@@ -1,4 +1,5 @@
 //Importacion de Clase Pelicula desde un paquete especifico
+import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -9,17 +10,17 @@ public class Principal {
         //Instancia de la clase com.aluracursos.screenmatch.modelos.Pelicula
         Pelicula miPelicua = new Pelicula();
 
-        //Asignacion de valores a los atributos del objeto
+        //Asignacion de valores a los atributos del objeto 'miPelicula"
         miPelicua.setNombre("Encanto");
         miPelicua.setFechaDeLanzamiento(2021);
         miPelicua.setDuracionEnMinutos(120);
         miPelicua.muestraFichaTecnica();
 
-        //Uso de funciones de la Clase
-        miPelicua.evalua(9.75);
-        miPelicua.evalua(9.25);
-        System.out.println(miPelicua.getTotalDeEvaluaciones());//getter
-        System.out.println(miPelicua.calculaMedia());
+        //Uso de funciones de la Clase 'miPelicula"
+        miPelicua.evalua(9.75);//Aniadimos nota
+        miPelicua.evalua(9.25);//Aniadimos nota
+        System.out.println("Total de evaluaciones: "+miPelicua.getTotalDeEvaluaciones());//getter
+        System.out.println("Evaluacion promedio: "+miPelicua.calculaMedia()+"\n");
 
         //Instancia de serie Casa Dragon y modificacion de sus atributos
         Serie casaDragon = new Serie();
@@ -33,20 +34,30 @@ public class Principal {
         casaDragon.muestraFichaTecnica();
 
         //Quiero saber cual es la duracion total en minutos de la serie
-        System.out.println(casaDragon.getDuracionEnMinutos());
+        System.out.println("Duracion en minutos: "+casaDragon.getDuracionEnMinutos()+"\n");//Uso de Getter
+
+        //Otra instancia del tipo Pelicula
+        Pelicula otraPelicula = new Pelicula();
+        otraPelicula.setNombre("Matrix");
+        otraPelicula.setFechaDeLanzamiento(1998);
+        otraPelicula.setDuracionEnMinutos(180);
+
+        //Probando funcionalidades de la clase Calculadora
+        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+        calculadora.incluye(miPelicua);
+        calculadora.incluye(casaDragon);
+        calculadora.incluye(otraPelicula);
+        System.out.println("Tiempo necesario para ver tus titulos favoritos: "
+                + calculadora.getTiempoTotal() + " minutos");
 
 
 
 
 
-//        //Otra instancia del tipo com.aluracursos.screenmatch.modelos.Pelicula
-//        com.aluracursos.screenmatch.modelos.Pelicula otraPelicula = new com.aluracursos.screenmatch.modelos.Pelicula();
-//
-//        //Asignacion de valores a los atributos del objeto
-//        otraPelicula.nombre = "Matrix";
-//        otraPelicula.fechaDeLanzamiento = 1998;
-//        otraPelicula.duracionEnMinutos = 180;
-//        otraPelicula.muestraFichaTecnica();
+
+
+
+
 //
 //        //Uso de funciones de la Clase
 //        otraPelicula.evalua(8.5);
