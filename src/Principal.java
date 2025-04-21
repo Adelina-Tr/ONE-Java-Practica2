@@ -1,5 +1,7 @@
 //Importacion de Clase Pelicula desde un paquete especifico
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
+import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
+import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -8,19 +10,19 @@ public class Principal {
     public static void main(String[] args) {
 
         //Instancia de la clase com.aluracursos.screenmatch.modelos.Pelicula
-        Pelicula miPelicua = new Pelicula();
+        Pelicula miPelicula = new Pelicula();
 
         //Asignacion de valores a los atributos del objeto 'miPelicula"
-        miPelicua.setNombre("Encanto");
-        miPelicua.setFechaDeLanzamiento(2021);
-        miPelicua.setDuracionEnMinutos(120);
-        miPelicua.muestraFichaTecnica();
+        miPelicula.setNombre("Encanto");
+        miPelicula.setFechaDeLanzamiento(2021);
+        miPelicula.setDuracionEnMinutos(120);
+        miPelicula.muestraFichaTecnica();
 
         //Uso de funciones de la Clase 'miPelicula"
-        miPelicua.evalua(9.75);//Aniadimos nota
-        miPelicua.evalua(9.25);//Aniadimos nota
-        System.out.println("Total de evaluaciones: "+miPelicua.getTotalDeEvaluaciones());//getter
-        System.out.println("Evaluacion promedio: "+miPelicua.calculaMedia()+"\n");
+        miPelicula.evalua(9.75);//Aniadimos nota
+        miPelicula.evalua(9.25);//Aniadimos nota
+        System.out.println("Total de evaluaciones: "+ miPelicula.getTotalDeEvaluaciones());//getter
+        System.out.println("Evaluacion promedio: "+ miPelicula.calculaMedia()+"\n");
 
         //Instancia de serie Casa Dragon y modificacion de sus atributos
         Serie casaDragon = new Serie();
@@ -44,11 +46,25 @@ public class Principal {
 
         //Probando funcionalidades de la clase Calculadora
         CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
-        calculadora.incluye(miPelicua);
+        calculadora.incluye(miPelicula);
         calculadora.incluye(casaDragon);
         calculadora.incluye(otraPelicula);
         System.out.println("Tiempo necesario para ver tus titulos favoritos: "
-                + calculadora.getTiempoTotal() + " minutos");
+                + calculadora.getTiempoTotal() + " minutos \n");
+
+        //Probando funcionalidad del Filtro de Recomendacion en una Pelicula
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        System.out.print(miPelicula.getNombre());
+        filtroRecomendacion.filtra(miPelicula);
+
+        //Probando funcionalidad del Filtro de Recomendacion en un Episodio
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("La casa Targarven");
+        episodio.setSerie(casaDragon);
+        episodio.setTotalVisualizaciones(300);
+        System.out.print(episodio.getNombre());
+        filtroRecomendacion.filtra(episodio);
 
 
 
