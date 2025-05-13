@@ -139,3 +139,10 @@ Aquí se presentan los diagramas UML que ilustran la estructura del proyecto y l
 1. **Clona el repositorio**
    ```bash
    git clone <https://github.com/Adelina-Tr/ONE-Java-Practica2-ScreenMatch>
+
+## 👩‍💻 Autora
+
+Este proyecto fue desarrollado por **Adelina Trejo**, como parte del curso _"Java: Aplicando la Orientación a Objetos"_ en la etapa **Tech Foundation** del **Programa Oracle Next Education** de **Alura Latam**.
+
+📌 **Conéctate con Adelina en LinkedIn:**  
+[LinkedIn de Adelina Trejo](https://www.linkedin.com/in/adelina-trejo/)
