@@ -128,6 +128,7 @@ Define un contrato para obtener clasificaciones de los objetos que la implementa
 ## 📊 Diagramas UML
 Aquí se presentan los diagramas UML que ilustran la estructura del proyecto y las relaciones entre las clases:
 
+![img_1.png](img_1.png)
 
 ## 🛠️ Tecnologías Utilizadas
 - **Java 17**
