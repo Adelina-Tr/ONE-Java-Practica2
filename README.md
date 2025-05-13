@@ -130,6 +130,17 @@ Aquí se presentan los diagramas UML que ilustran la estructura del proyecto y l
 
 ![img.png](img.png)
 
+## 📚 Documentación Adicional
+
+Además del código fuente y la estructura del proyecto, ScreenMatch incluye dos archivos clave para mejorar la comprensión y aplicación de buenas prácticas en Programación Orientada a Objetos (POO):
+
+- [📖 **Glosario**](GLOSARIO.md): Contiene definiciones detalladas de los **pilares de la POO**, términos clave y **palabras reservadas** en Java, proporcionando una referencia rápida para entender los conceptos fundamentales aplicados en el proyecto.
+
+- [✅ **Buenas Prácticas de Java en POO**](BUENAS_PRACTICAS.md): Explica las **estrategias y principios de diseño** utilizados en ScreenMatch, como encapsulamiento, modularidad, nomenclatura clara y patrones de diseño, garantizando código limpio, reutilizable y fácil de mantener.
+
+Estos documentos complementan la arquitectura del proyecto y sirven como una guía para mejorar el desarrollo de software con principios sólidos. 🚀
+
+
 ## 🛠️ Tecnologías Utilizadas
 - **Java 17**
 - **IntelliJ IDEA**
